@@ -1,0 +1,26 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+      - run: dotnet build src/SteppedOut.csproj -c Release
+      - run: dotnet test tests/SteppedOut.Tests.csproj -c Release
+      - run: dotnet publish src/SteppedOut.csproj -c Release -r win-x64 -o publish/win-x64
+      - name: smoke test the published exe
+        run: |
+          $out = ./publish/win-x64/SteppedOut.exe --once --dry-run | Out-String
+          $out
+          if ($out -notmatch 'verdict:') { exit 1 }

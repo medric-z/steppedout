@@ -1,0 +1,58 @@
+name: release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        rid: [win-x64, win-arm64]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+      - if: matrix.rid == 'win-x64'
+        run: dotnet test tests/SteppedOut.Tests.csproj -c Release
+      - run: dotnet publish src/SteppedOut.csproj -c Release -r ${{ matrix.rid }} -p:ContinuousIntegrationBuild=true -o out
+      - run: Move-Item out/SteppedOut.exe out/SteppedOut-${{ matrix.rid }}.exe
+      # Provenance only means something for a public build; private test releases skip it.
+      - if: ${{ !github.event.repository.private }}
+        uses: actions/attest-build-provenance@v4
+        with:
+          subject-path: out/SteppedOut-${{ matrix.rid }}.exe
+      - uses: actions/upload-artifact@v7
+        with:
+          name: ${{ matrix.rid }}
+          path: out/SteppedOut-${{ matrix.rid }}.exe
+          if-no-files-found: error
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: out
+          merge-multiple: true
+      - run: cd out && sha256sum *.exe > SHA256SUMS.txt && cat SHA256SUMS.txt
+      - run: >
+          gh release create "$GITHUB_REF_NAME"
+          out/SteppedOut-win-x64.exe out/SteppedOut-win-arm64.exe out/SHA256SUMS.txt
+          --repo "$GITHUB_REPOSITORY" --title "$GITHUB_REF_NAME"
+          --notes "Self-contained single-file builds for x64 and ARM64. Verify with: gh attestation verify SteppedOut-win-x64.exe --repo $GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: verify the attestation the way a user would
+        if: ${{ !github.event.repository.private }}
+        run: gh attestation verify out/SteppedOut-win-x64.exe --repo "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ github.token }}
