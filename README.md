@@ -28,15 +28,27 @@ Windows, and makes no network connections.
 
 ## Install
 
+Quickest, one line in PowerShell. It downloads the latest exe into your Local AppData folder and
+starts it:
+
+```
+$d="$env:LOCALAPPDATA\SteppedOut"; mkdir $d -Force | Out-Null; iwr https://github.com/medric-z/steppedout/releases/latest/download/SteppedOut-win-x64.exe -OutFile "$d\SteppedOut.exe"; start "$d\SteppedOut.exe"
+```
+
+Or by hand:
+
 1. Download `SteppedOut-win-x64.exe` (or `-win-arm64`) from the
    [latest release](https://github.com/medric-z/steppedout/releases/latest) and put it anywhere.
 2. Run it. It appears as a padlock in the notification area and has no window. Right-click for the
    menu, double-click for settings.
 3. Tick "Start with Windows" in the menu if you want it at every sign-in.
 
-The exe is not code-signed, so SmartScreen shows "Windows protected your PC" on first run. Click
-"More info", then "Run anyway", or verify the file first (see below). The file is about 47 MB
-because it carries its own copy of the .NET runtime; nothing is installed.
+The exe is not code-signed yet, so SmartScreen shows "Windows protected your PC" on first run.
+Click "More info", then "Run anyway", or verify the file first (see below). PCs with Smart App
+Control switched on, which some new Windows 11 machines have, block every unsigned program outright
+with no "run anyway"; until releases are signed, the only way past that is turning Smart App Control
+off in Windows Security, a one-way switch. The file is about 47 MB because it carries its own copy
+of the .NET runtime; nothing is installed.
 
 Windows 10 and 11, x64 or ARM64. The ARM64 build comes out of CI and has not been tested on an ARM
 machine.
@@ -175,6 +187,18 @@ dotnet publish src/SteppedOut.csproj -c Release -r win-x64 -o publish
 
 The publish step produces one self-contained exe. Add `--no-self-contained` for a 265 KB exe that
 needs the .NET Desktop Runtime installed instead.
+
+## Code signing policy
+
+Releases are built by GitHub Actions from the tagged commit; nothing is built on a developer's
+machine. They are not yet signed with a certificate. An application to the SignPath Foundation for
+free open-source code signing is pending; once granted, every release will carry the line "Free
+code signing provided by SignPath.io, certificate by SignPath Foundation".
+
+Roles for the signing process: medric-z is the sole committer, reviewer and approver.
+
+Privacy: this program will not transfer any information to other networked systems unless
+specifically requested by the user.
 
 ## Licence
 
