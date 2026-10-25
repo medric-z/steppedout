@@ -1,0 +1,6 @@
+[
+  {"id": "2L.1", "name": "OnScreenExplained", "en": "\"Only when on screen\" means any of the app's windows you can see, on any screen, that isn't minimized.", "ar": "\"نافذته ظاهرة\" تعني أن له نافذة واحدة على الأقل على أي شاشة، وليست مصغّرة.", "where": "tab \"Locking\", under the app rules", "row": "App rules", "kind": "text", "status": "new"},
+  {"id": "2L.2", "name": "AlwaysLockAfter", "en": "Always lock after", "ar": "القفل بعد", "where": "screen reader name of the Custom… box under \"Fixed time\"", "row": "On battery power, App rules", "kind": "text", "status": "new"},
+  {"id": "2L.3", "name": "RuleLockingName", "en": "Locking rule for {0}", "ar": "قاعدة القفل لتطبيق {0}", "where": "screen reader name of an app rule's Locking list", "row": "App rules", "kind": "template", "status": "new"},
+  {"id": "2L.4", "name": "RuleWhenName", "en": "When the rule for {0} applies", "ar": "حالة القاعدة لتطبيق {0}", "where": "screen reader name of an app rule's Applies when list", "row": "App rules", "kind": "template", "status": "new"}
+]

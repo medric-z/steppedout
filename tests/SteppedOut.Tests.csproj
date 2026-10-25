@@ -17,6 +17,11 @@
     <ProjectReference Include="../src/SteppedOut.csproj" />
   </ItemGroup>
 
+  <!-- The checks tools/sounds/gen.cs runs on every sound it makes, tested here too. -->
+  <ItemGroup>
+    <Compile Include="../tools/sounds/SoundCheck.cs" Link="Sounds/SoundCheck.cs" />
+  </ItemGroup>
+
   <ItemGroup>
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>

@@ -1,0 +1,43 @@
+STORE VERSION (optional)
+
+This is the same SteppedOut, packaged the way the Microsoft Store installs it. Trying it on your PC
+is optional: the Store checks the package again when it is uploaded.
+
+It needs Developer Mode, because the test package isn't signed. Nothing here turns it on. Only if
+you choose to, turn it on yourself in Settings > System > Advanced, in the For developers section
+(older Windows 11: Settings > System > For developers; Windows 10: Update & Security > For
+developers), and turn it off again when you are done.
+
+Everything for it is in the "store" folder next to this file: install-store-test.ps1 and the
+package folders (layout\x64, layout\arm64). Don't move or delete that folder while the test version
+is installed; Windows runs it from there.
+
+1. Quit SteppedOut from its tray menu (Quit, not Pause).
+
+2. Open PowerShell in the "store" folder and run:
+     powershell -ExecutionPolicy Bypass -File install-store-test.ps1
+   It stops without changing anything if Developer Mode is off or SteppedOut is still running.
+   It first copies your settings folder to %APPDATA%\SteppedOut-before-store-test-<date and time>.
+
+3. Start SteppedOut from the Start menu.
+
+4. Check:
+   - Your settings came over. The Store version reads and saves the same config.json as the
+     normal one. Files that didn't exist yet, such as today.json, go to the Store version's own
+     folder: %LOCALAPPDATA%\Packages\<its name>\LocalCache\Roaming\SteppedOut.
+   - "Open folder" opens the folder that holds config.json, and it really has config.json in it.
+   - Start with Windows: turn it on in SteppedOut. Settings > Apps > Startup now lists SteppedOut,
+     turned on. Turn it off there, then open SteppedOut's settings again: the switch is off, can't
+     be changed, and says "Turned off in Settings > Apps > Startup. Turn it on there". Turn it back
+     on in Settings > Apps > Startup: SteppedOut shows it on again.
+   - Sign out and back in with Start with Windows on: it starts by itself. Turn Start with Windows
+     off in your normal copy first, or both copies start.
+   - The tray menu, Lock now, the countdown and the shortcut work as in the normal version.
+
+5. To remove it: quit it from its tray menu, then run
+     powershell -ExecutionPolicy Bypass -File install-store-test.ps1 -Remove
+   This also deletes the Store version's own folder. Turn Developer Mode off again if you turned it
+   on for this.
+
+6. To go back to your settings from before the test: quit SteppedOut and copy the files from
+   %APPDATA%\SteppedOut-before-store-test-<date and time> over %APPDATA%\SteppedOut.

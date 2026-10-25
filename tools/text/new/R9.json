@@ -1,0 +1,5 @@
+[
+  {"id": "R9.1", "name": "AtLockTime", "en": "At the lock time", "ar": "عند انتهاء مهلة القفل", "where": "Locking tab, after On battery power: one list for what happens when the lock time comes (Lock the PC, Lock and turn off the screen, Lock and sleep, Don't lock)", "row": "At the lock time", "kind": "text", "status": "new"},
+  {"id": "R9.2", "name": "AtLockTimeDetail", "en": "Away actions like muting run either way", "ar": "تعمل إجراءات المغادرة، مثل كتم الصوت، حتى إذا لم يُقفل الكمبيوتر", "where": "Locking tab, the line under At the lock time: the away actions run whether or not the PC locks", "row": "At the lock time", "kind": "text", "status": "new"},
+  {"id": "R9.3", "name": "DontLock", "en": "Don't lock", "ar": "عدم القفل", "where": "At the lock time list, the last choice: the PC doesn't lock at the lock time, and the away actions still run", "row": "At the lock time", "kind": "text", "status": "new"}
+]

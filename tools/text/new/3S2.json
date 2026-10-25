@@ -1,0 +1,5 @@
+[
+  {"id": "3S2.1", "name": "StartupOffInWindows", "en": "Turned off in Settings > Apps > Startup. Turn it on there", "ar": "غير مفعَّل في إعدادات Windows. يمكنك تفعيله من الإعدادات > التطبيقات > بدء التشغيل.", "where": "main settings list, Store version only, under the switch when Windows Settings or Task Manager turned the app's startup off; only the person can turn it back on there", "row": "Start with Windows", "kind": "text", "status": "new"},
+  {"id": "3S2.2", "name": "StartupOffByPolicy", "en": "Off because your organization manages this setting", "ar": "غير مفعَّل لأن مؤسستك تدير هذا الإعداد", "where": "main settings list, Store version only, under the switch when a policy keeps the app's startup off", "row": "Start with Windows", "kind": "text", "status": "new"},
+  {"id": "3S2.3", "name": "StartupOnByPolicy", "en": "On because your organization manages this setting", "ar": "مفعَّل لأن مؤسستك تدير هذا الإعداد", "where": "main settings list, Store version only, under the switch when a policy keeps the app's startup on", "row": "Start with Windows", "kind": "text", "status": "new"}
+]

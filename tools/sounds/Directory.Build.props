@@ -1,0 +1,6 @@
+<Project>
+  <!-- dotnet run tools/sounds/gen.cs compiles gen.cs alone; this adds the checks it shares with the tests. -->
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)SoundCheck.cs" />
+  </ItemGroup>
+</Project>

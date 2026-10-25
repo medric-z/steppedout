@@ -6,10 +6,14 @@
     <UseWindowsForms>true</UseWindowsForms>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Media control calls WinRT through raw vtables; see Interop/MediaSessions.cs. -->
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!-- No designer here, so the properties of the hand-drawn controls are never serialized. -->
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
     <RootNamespace>SteppedOut</RootNamespace>
     <AssemblyName>SteppedOut</AssemblyName>
-    <Version>0.1.0</Version>
+    <Version>1.0.0</Version>
     <Authors>medric-z</Authors>
     <Description>Locks the Windows session after real inactivity.</Description>
     <ApplicationIcon>icon.ico</ApplicationIcon>
@@ -18,22 +22,35 @@
     <InvariantGlobalization>true</InvariantGlobalization>
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
     <DebugType>embedded</DebugType>
-    <!-- Keeps the build machine's folder names out of the embedded debug info. -->
-    <PathMap>$(MSBuildProjectDirectory)=/src</PathMap>
     <RuntimeIdentifiers>win-x64;win-arm64</RuntimeIdentifiers>
   </PropertyGroup>
 
-  <!-- dotnet publish -r win-x64 gives one self-contained exe; add "no-self-contained" for a small one. -->
+  <!-- dotnet publish -r win-x64 gives one self-contained exe; add the no-self-contained option for a small one.
+       The exe is left uncompressed on purpose: a compressed one is unpacked into memory at every
+       start and stays there, about 40 MB more for as long as the app runs.
+       ReadyToRun stays off: the .NET and Windows Forms parts of the exe come precompiled already, so
+       it would only save compiling this app's own code, about 0.15 s once at sign-in, for a bigger
+       exe and one more download in every release build.
+       An exe built with -r names /_/src instead of the build machine's folders in its embedded
+       debug info. In a git checkout it is built as the release workflow builds it: git names the
+       repository /_/, and Source Link points /_/ at the commit on GitHub. A copy without git, such
+       as GitHub's Source code zip, has no such mapping, so the PathMap gives this folder the same
+       name. Builds without -r, such as the tests', keep the real paths, so a code coverage report
+       can find the source files. The compiler reads a comma and an equals sign in a path map as its
+       own separators unless they are doubled, as they are here, so a folder may have either. -->
   <PropertyGroup Condition="'$(RuntimeIdentifier)' != ''">
     <SelfContained Condition="'$(SelfContained)' == ''">true</SelfContained>
     <PublishSingleFile>true</PublishSingleFile>
-    <EnableCompressionInSingleFile Condition="'$(SelfContained)' == 'true'">true</EnableCompressionInSingleFile>
     <PublishReadyToRun>false</PublishReadyToRun>
+    <ContinuousIntegrationBuild Condition="'$(ContinuousIntegrationBuild)' == ''">true</ContinuousIntegrationBuild>
+    <PathMap>$(MSBuildProjectDirectory.Replace(',', ',,').Replace('=', '=='))=/_/src</PathMap>
   </PropertyGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="icon.ico" LogicalName="icon.ico" />
+    <EmbeddedResource Include="Sounds/*.wav" LogicalName="Sounds.%(Filename).wav" />
     <InternalsVisibleTo Include="SteppedOut.Tests" />
+    <InternalsVisibleTo Include="SteppedOut.Shots" />
   </ItemGroup>
 
 </Project>

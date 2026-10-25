@@ -2,55 +2,31 @@ using System.Diagnostics;
 
 namespace SteppedOut;
 
-// Never lock while one of the named programs is running: a render, a recording, a long call.
-sealed class ProcessRule : ILockSuppressor
+// Finding programs by name, for the app rules: "obs64", "obs64.exe" and a full path all name the
+// same program.
+static class ProcessRule
 {
-    static readonly TimeSpan ScanEvery = TimeSpan.FromSeconds(5);
-    readonly HashSet<string> names;
-    DateTime scannedAt = DateTime.MinValue;
-    string? running;
+    internal static readonly int MySession = Process.GetCurrentProcess().SessionId;
 
-    public ProcessRule(IEnumerable<string> processNames)
+    // Every name in names that a process in this session runs under, each once. The list covers
+    // the whole machine: services, and other people still signed in behind a switch of user. Only a
+    // program in this session says the person here is busy.
+    public static HashSet<string> Running(IEnumerable<RunningProcess> processes, IReadOnlySet<string> names)
     {
-        names = new HashSet<string>(processNames.Select(Normalize).Where(n => n.Length > 0), StringComparer.OrdinalIgnoreCase);
-    }
-
-    public string Name => "processes";
-
-    public string? Check()
-    {
-        if (names.Count == 0) return null;
-
-        // Listing every process costs a few milliseconds, so it is not done on every tick.
-        if (DateTime.Now - scannedAt >= ScanEvery)
+        var found = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        if (names.Count == 0) return found;
+        foreach (var process in processes)
         {
-            scannedAt = DateTime.Now;
-            running = null;
-            var processes = Process.GetProcesses();
-            try
-            {
-                foreach (var process in processes)
-                {
-                    if (names.Contains(process.ProcessName))
-                    {
-                        running = process.ProcessName;
-                        break;
-                    }
-                }
-            }
-            finally
-            {
-                foreach (var process in processes) process.Dispose();
-            }
+            if (process.Session == MySession && names.Contains(process.Name)) found.Add(process.Name);
         }
-
-        return running is null ? null : "process running: " + running;
+        return found;
     }
 
-    // Accepts "obs64", "obs64.exe" or a full path, since people paste all three.
+    // Accepts "obs64", "obs64.exe" or a full path, since people paste all three. Explorer's
+    // "Copy as path" puts the path in quotes.
     internal static string Normalize(string name)
     {
-        string file = Path.GetFileName(name.Trim());
+        string file = Path.GetFileName(name.Trim().Trim('"').Trim());
         return file.EndsWith(".exe", StringComparison.OrdinalIgnoreCase) ? file[..^4] : file;
     }
 }

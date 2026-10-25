@@ -1,0 +1,4 @@
+[
+  {"id": "2W.1", "name": "ScriptFileFilter", "en": "Scripts and shortcuts|*.bat;*.cmd;*.ps1;*.lnk", "ar": "البرامج النصية والاختصارات|*.bat;*.cmd;*.ps1;*.lnk", "where": "file dialog from Choose… on the Away and back tab: the kinds of file it shows", "row": "Run a script when you're away, Run a script when you're back", "kind": "text", "status": "new"},
+  {"id": "2W.2", "name": "AppPickerFileFilter", "en": "Programs|*.exe", "ar": "البرامج|*.exe", "where": "file dialog from Choose another app…: the kinds of file it shows", "row": "Open apps, Close apps", "kind": "text", "status": "new"}
+]

@@ -4,32 +4,36 @@ on:
   push:
     tags: ['v*']
 
-permissions:
-  contents: write
-  id-token: write
-  attestations: write
+# Each job gets only what it needs: the build, which runs the tests and their packages, cannot
+# write to the repository, and only the release job can.
+permissions: {}
 
 jobs:
   build:
     runs-on: windows-latest
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
     strategy:
       matrix:
         rid: [win-x64, win-arm64]
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-dotnet@v6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
         with:
           dotnet-version: 10.0.x
+      # Two tests need a real signed-in screen (text colors, a page's fit); they run on a PC, not here.
       - if: matrix.rid == 'win-x64'
-        run: dotnet test tests/SteppedOut.Tests.csproj -c Release
+        run: dotnet test tests/SteppedOut.Tests.csproj -c Release --filter "TestCategory!=Desktop"
       - run: dotnet publish src/SteppedOut.csproj -c Release -r ${{ matrix.rid }} -p:ContinuousIntegrationBuild=true -o out
       - run: Move-Item out/SteppedOut.exe out/SteppedOut-${{ matrix.rid }}.exe
       # Provenance only means something for a public build; private test releases skip it.
       - if: ${{ !github.event.repository.private }}
-        uses: actions/attest-build-provenance@v4
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
         with:
           subject-path: out/SteppedOut-${{ matrix.rid }}.exe
-      - uses: actions/upload-artifact@v7
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: ${{ matrix.rid }}
           path: out/SteppedOut-${{ matrix.rid }}.exe
@@ -38,8 +42,16 @@ jobs:
   release:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      attestations: read
     steps:
-      - uses: actions/download-artifact@v8
+      # Only for the release notes; the files come from the build job.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          sparse-checkout: .github/release-notes.md
+          sparse-checkout-cone-mode: false
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           path: out
           merge-multiple: true
@@ -48,7 +60,7 @@ jobs:
           gh release create "$GITHUB_REF_NAME"
           out/SteppedOut-win-x64.exe out/SteppedOut-win-arm64.exe out/SHA256SUMS.txt
           --repo "$GITHUB_REPOSITORY" --title "$GITHUB_REF_NAME"
-          --notes "Self-contained single-file builds for x64 and ARM64. Verify with: gh attestation verify SteppedOut-win-x64.exe --repo $GITHUB_REPOSITORY"
+          --notes-file .github/release-notes.md
         env:
           GH_TOKEN: ${{ github.token }}
       - name: verify the attestation the way a user would

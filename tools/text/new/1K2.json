@@ -1,0 +1,9 @@
+[
+  {"id": "1K2.1", "name": "CustomRangeMinutes", "en": "From {0} to {1} minutes.", "ar": "من {0} إلى {1} دقيقة", "where": "Custom… box under a list, before anything is typed", "row": "", "kind": "template", "status": "new"},
+  {"id": "1K2.2", "name": "CustomRangeSeconds", "en": "From {0} to {1} seconds.", "ar": "من {0} إلى {1} ثانية", "where": "Custom… box under a list, before anything is typed", "row": "Warn me before it locks", "kind": "template", "status": "new"},
+  {"id": "1K2.3", "name": "CustomClampedMinutes", "en": "Only {0} to {1} minutes work, so it uses {2}.", "ar": "اكتب رقمًا من {0} إلى {1} دقيقة. القيمة المستخدمة الآن: {2}.", "where": "Custom… box under a list, after a number out of range", "row": "", "kind": "template", "status": "new"},
+  {"id": "1K2.4", "name": "CustomClampedSeconds", "en": "Only {0} to {1} seconds work, so it uses {2}.", "ar": "اكتب رقمًا من {0} إلى {1} ثانية. القيمة المستخدمة الآن: {2}.", "where": "Custom… box under a list, after a number out of range", "row": "Warn me before it locks", "kind": "template", "status": "new"},
+  {"id": "1K2.5", "name": "CustomNotANumberSeconds", "en": "Type a number of seconds. Until then it uses {0}.", "ar": "اكتب عدد الثواني. القيمة المستخدمة الآن: {0}.", "where": "Custom… box under a list, while it holds no number", "row": "Warn me before it locks", "kind": "template", "status": "new"},
+  {"id": "1K2.6", "name": "SecondsFieldName", "en": "{0}, in seconds", "ar": "{0}، بالثواني", "where": "screen reader name of the Custom… box", "row": "Warn me before it locks", "kind": "template", "status": "new"},
+  {"id": "1K2.7", "name": "RemoveApp", "en": "Remove {0}", "ar": "إزالة {0}", "where": "screen reader name of the × on an app in a list", "row": "Open apps, Close apps", "kind": "template", "status": "new"}
+]

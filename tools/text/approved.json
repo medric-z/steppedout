@@ -1,0 +1,1435 @@
+[
+ {
+  "en": "SteppedOut settings",
+  "ar": "إعدادات SteppedOut",
+  "where": "window header",
+  "row": "",
+  "kind": "text",
+  "id": 1
+ },
+ {
+  "en": "Language",
+  "ar": "اللغة",
+  "where": "window header",
+  "row": "",
+  "kind": "text",
+  "id": 2
+ },
+ {
+  "en": "English",
+  "ar": "English",
+  "where": "window header",
+  "row": "",
+  "kind": "text",
+  "id": 3
+ },
+ {
+  "en": "On · locks in 28 min",
+  "ar": "مفعَّل · يُقفل بعد 28 دقيقة",
+  "where": "status box at the top",
+  "row": "",
+  "kind": "status headline (live)",
+  "id": 4
+ },
+ {
+  "en": "The PC locks if you don't use the mouse or keyboard for 30 min",
+  "ar": "يُقفل الكمبيوتر إذا لم تستخدم الماوس أو لوحة المفاتيح لمدة 30 دقيقة",
+  "where": "status box at the top",
+  "row": "",
+  "kind": "status sentence (live)",
+  "id": 5
+ },
+ {
+  "en": "Away today:",
+  "ar": "الغياب اليوم:",
+  "where": "status box at the top",
+  "row": "",
+  "kind": "small stat box label",
+  "id": 6
+ },
+ {
+  "en": "1 hr 20 min",
+  "ar": "ساعة و20 دقيقة",
+  "where": "status box at the top",
+  "row": "",
+  "kind": "small stat box label",
+  "id": 7
+ },
+ {
+  "en": "Locked today:",
+  "ar": "مرات القفل اليوم:",
+  "where": "status box at the top",
+  "row": "",
+  "kind": "small stat box label",
+  "id": 8
+ },
+ {
+  "en": "3 times",
+  "ar": "3",
+  "where": "status box at the top",
+  "row": "",
+  "kind": "small stat box label",
+  "id": 9
+ },
+ {
+  "en": "Pause",
+  "ar": "إيقاف مؤقت",
+  "where": "status box at the top",
+  "row": "",
+  "kind": "button",
+  "id": 10
+ },
+ {
+  "en": "Lock now",
+  "ar": "قفل الآن",
+  "where": "status box at the top",
+  "row": "",
+  "kind": "button",
+  "id": 11
+ },
+ {
+  "en": "Lock the PC after",
+  "ar": "قفل الكمبيوتر بعد",
+  "where": "main settings list",
+  "row": "Lock the PC after",
+  "kind": "setting title",
+  "id": 12
+ },
+ {
+  "en": "Time without using the mouse or keyboard",
+  "ar": "المدة التي لا تستخدم فيها الماوس أو لوحة المفاتيح",
+  "where": "main settings list",
+  "row": "Lock the PC after",
+  "kind": "description under a setting title",
+  "id": 13
+ },
+ {
+  "en": "30 minutes",
+  "ar": "30 دقيقة",
+  "where": "main settings list",
+  "row": "Lock the PC after",
+  "kind": "dropdown current value",
+  "id": 14
+ },
+ {
+  "en": "While music or video is playing",
+  "ar": "أثناء تشغيل الموسيقى أو الفيديو",
+  "where": "main settings list",
+  "row": "While music or video is playing",
+  "kind": "setting title",
+  "id": 15
+ },
+ {
+  "en": "Adds time before locking so music or video isn't cut off",
+  "ar": "تأخير القفل حتى لا يتوقف ما تشاهده أو تسمعه",
+  "where": "main settings list",
+  "row": "While music or video is playing",
+  "kind": "description under a setting title",
+  "id": 16
+ },
+ {
+  "en": "+1 hour",
+  "ar": "+ساعة",
+  "where": "main settings list",
+  "row": "While music or video is playing",
+  "kind": "dropdown current value",
+  "id": 17
+ },
+ {
+  "en": "While you're on a call",
+  "ar": "أثناء مكالمة",
+  "where": "main settings list",
+  "row": "While you're on a call",
+  "kind": "setting title",
+  "id": 18
+ },
+ {
+  "en": "Any app using your microphone counts as a call",
+  "ar": "يُعتبر استخدام أي تطبيق للميكروفون مكالمة",
+  "where": "main settings list",
+  "row": "While you're on a call",
+  "kind": "description under a setting title",
+  "id": 19
+ },
+ {
+  "en": "Never lock",
+  "ar": "عدم القفل",
+  "where": "main settings list",
+  "row": "While you're on a call",
+  "kind": "dropdown current value",
+  "id": 20
+ },
+ {
+  "en": "While an app is full screen",
+  "ar": "عند استخدام تطبيق في وضع ملء الشاشة",
+  "where": "main settings list",
+  "row": "While an app is full screen",
+  "kind": "setting title",
+  "id": 21
+ },
+ {
+  "en": "Any app that fills the whole screen",
+  "ar": "أي تطبيق يملأ الشاشة، مهما كان نوعه",
+  "where": "main settings list",
+  "row": "While an app is full screen",
+  "kind": "description under a setting title",
+  "id": 22
+ },
+ {
+  "en": "+2 hours",
+  "ar": "+ساعتان",
+  "where": "main settings list",
+  "row": "While an app is full screen",
+  "kind": "dropdown current value",
+  "id": 23
+ },
+ {
+  "en": "Warn me before it locks",
+  "ar": "التنبيه قبل القفل",
+  "where": "main settings list",
+  "row": "Warn me before it locks",
+  "kind": "setting title",
+  "id": 24
+ },
+ {
+  "en": "Try it",
+  "ar": "معاينة",
+  "where": "main settings list",
+  "row": "Warn me before it locks",
+  "kind": "button",
+  "id": 26
+ },
+ {
+  "en": "30 seconds",
+  "ar": "30 ثانية",
+  "where": "main settings list",
+  "row": "Warn me before it locks",
+  "kind": "dropdown current value",
+  "id": 27
+ },
+ {
+  "en": "Pause music and video when you leave",
+  "ar": "إيقاف الموسيقى أو الفيديو مؤقتًا عند المغادرة",
+  "where": "main settings list",
+  "row": "Pause music and video when you leave",
+  "kind": "setting title",
+  "id": 28
+ },
+ {
+  "en": "So you don't miss anything while you're away",
+  "ar": "حتى لا يفوتك ما تشاهده أو تسمعه وأنت بعيد",
+  "where": "main settings list",
+  "row": "Pause music and video when you leave",
+  "kind": "description under a setting title",
+  "id": 29
+ },
+ {
+  "en": "Play again when you're back",
+  "ar": "استئناف التشغيل عند العودة",
+  "where": "main settings list",
+  "row": "Pause music and video when you leave",
+  "kind": "dropdown current value",
+  "id": 30
+ },
+ {
+  "en": "Start with Windows",
+  "ar": "البدء مع Windows",
+  "where": "main settings list",
+  "row": "Start with Windows",
+  "kind": "setting title",
+  "id": 31
+ },
+ {
+  "en": "Runs by itself every time you turn on your PC",
+  "ar": "يبدأ تلقائيًا كلما شغّلت الكمبيوتر",
+  "where": "main settings list",
+  "row": "Start with Windows",
+  "kind": "description under a setting title",
+  "id": 32
+ },
+ {
+  "en": "On",
+  "ar": "مفعَّل",
+  "where": "main settings list",
+  "row": "Start with Windows",
+  "kind": "switch state label",
+  "id": 33
+ },
+ {
+  "en": "Locking",
+  "ar": "القفل",
+  "where": "tab strip",
+  "row": "",
+  "kind": "tab name",
+  "id": 34
+ },
+ {
+  "en": "Lock time, battery, app rules, shortcut",
+  "ar": "مهلة القفل، البطارية، قواعد التطبيقات، الاختصار",
+  "where": "tab strip",
+  "row": "",
+  "kind": "tab subtitle",
+  "id": 35
+ },
+ {
+  "en": "Away and back",
+  "ar": "المغادرة والعودة",
+  "where": "tab strip",
+  "row": "",
+  "kind": "tab name",
+  "id": 36
+ },
+ {
+  "en": "Pause, mute, screen, sounds, apps",
+  "ar": "الموسيقى، كتم الصوت، الشاشة، الأصوات، التطبيقات",
+  "where": "tab strip",
+  "row": "",
+  "kind": "tab subtitle",
+  "id": 37
+ },
+ {
+  "en": "Appearance",
+  "ar": "المظهر",
+  "where": "tab strip",
+  "row": "",
+  "kind": "tab name",
+  "id": 38
+ },
+ {
+  "en": "Theme, text size, icon, notifications",
+  "ar": "الوضع الداكن، حجم النص، الأيقونة، الإشعارات",
+  "where": "tab strip",
+  "row": "",
+  "kind": "tab subtitle",
+  "id": 39
+ },
+ {
+  "en": "Breaks",
+  "ar": "الاستراحات",
+  "where": "tab strip",
+  "row": "",
+  "kind": "tab name",
+  "id": 40
+ },
+ {
+  "en": "Break and eye reminders, snooze",
+  "ar": "التذكيرات، استراحة العينين، التأجيل",
+  "where": "tab strip",
+  "row": "",
+  "kind": "tab subtitle",
+  "id": 41
+ },
+ {
+  "en": "Extras",
+  "ar": "المزيد",
+  "where": "tab strip",
+  "row": "",
+  "kind": "tab name",
+  "id": 42
+ },
+ {
+  "en": "Audio, mouse, log, reset",
+  "ar": "الصوت، الماوس، السجل، إعادة التعيين",
+  "where": "tab strip",
+  "row": "",
+  "kind": "tab subtitle",
+  "id": 43
+ },
+ {
+  "en": "Rules for battery, controllers, and specific apps, or turn off locking.",
+  "ar": "يمكنك ضبط القفل على البطارية، وعند استخدام وحدة التحكم في الألعاب، ولكل تطبيق، أو إيقافه",
+  "where": "tab \"Locking\"",
+  "row": "",
+  "kind": "description under a setting title",
+  "id": 44
+ },
+ {
+  "en": "On battery power",
+  "ar": "مهلة القفل على البطارية",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "text",
+  "id": 45
+ },
+ {
+  "en": "Use a different lock time when the laptop isn't plugged in",
+  "ar": "يمكنك اختيار مهلة قفل أخرى عندما لا يكون الكمبيوتر موصولًا بالكهرباء",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "description under a setting title",
+  "id": 46
+ },
+ {
+  "en": "50% sooner",
+  "ar": "أقصر بنسبة 50%",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "dropdown current value",
+  "id": 47
+ },
+ {
+  "en": "Lock the PC when you're away",
+  "ar": "قفل الجهاز عند غيابك",
+  "where": "tab \"Locking\"",
+  "row": "Lock the PC when you're awayWhen this is off, away actions like muting still run",
+  "kind": "text",
+  "id": 48
+ },
+ {
+  "en": "When this is off, away actions like muting still run, but the PC doesn't lock",
+  "ar": "عند إيقاف هذا الإعداد، تعمل إجراءات الغياب مثل كتم الصوت دون قفل الجهاز",
+  "where": "tab \"Locking\"",
+  "row": "Lock the PC when you're awayWhen this is off, away actions like muting still run",
+  "kind": "description under a setting title",
+  "id": 49
+ },
+ {
+  "en": "Count a controller as using the PC",
+  "ar": "وحدة التحكم في الألعاب",
+  "where": "tab \"Locking\"",
+  "row": "Count a game controller as using the PCPlaying with a controller keeps the PC fr",
+  "kind": "text",
+  "id": 50
+ },
+ {
+  "en": "Pressing buttons or moving the sticks counts as using the PC",
+  "ar": "يتأخر القفل عند الضغط على الأزرار أو تحريك العصا، كما عند تحريك الماوس",
+  "where": "tab \"Locking\"",
+  "row": "Count a game controller as using the PCPlaying with a controller keeps the PC fr",
+  "kind": "description under a setting title",
+  "id": 51
+ },
+ {
+  "en": "Off",
+  "ar": "غير مفعَّل",
+  "where": "tab \"Locking\"",
+  "row": "Count a game controller as using the PCPlaying with a controller keeps the PC fr",
+  "kind": "switch state label",
+  "id": 52
+ },
+ {
+  "en": "App rules",
+  "ar": "قواعد التطبيقات",
+  "where": "tab \"Locking\"",
+  "row": "App rulesLock sooner, later, or never while a specific app is open. \"Always lock",
+  "kind": "text",
+  "id": 53
+ },
+ {
+  "en": "Lock sooner, later, or never while a specific app is open. \"Always lock after\" overrides Never lock.",
+  "ar": "يمكنك تقليل مهلة القفل أو إطالتها أو منع القفل عندما يكون تطبيق تختاره مفتوحًا. إذا اجتمع \"القفل بعد\" مع \"عدم القفل\"، فالأولوية لخيار \"القفل بعد\".",
+  "where": "tab \"Locking\"",
+  "row": "App rulesLock sooner, later, or never while a specific app is open. \"Always lock",
+  "kind": "description under a setting title",
+  "id": 54
+ },
+ {
+  "en": "Add app",
+  "ar": "إضافة تطبيق",
+  "where": "tab \"Locking\"",
+  "row": "App rulesLock sooner, later, or never while a specific app is open. \"Always lock",
+  "kind": "button",
+  "id": 55
+ },
+ {
+  "en": "App",
+  "ar": "التطبيق",
+  "where": "tab \"Locking\"",
+  "row": "",
+  "kind": "table column heading",
+  "id": 56
+ },
+ {
+  "en": "Applies when",
+  "ar": "الحالة",
+  "where": "tab \"Locking\"",
+  "row": "",
+  "kind": "table column heading",
+  "id": 57
+ },
+ {
+  "en": "OBS",
+  "ar": "",
+  "where": "tab \"Locking\"",
+  "row": "OBSNever lock Open, even in background",
+  "kind": "text",
+  "id": 58
+ },
+ {
+  "en": "Open, even in background",
+  "ar": "مفتوح، حتى في الخلفية",
+  "where": "tab \"Locking\"",
+  "row": "OBSNever lock Open, even in background",
+  "kind": "dropdown current value",
+  "id": 59
+ },
+ {
+  "en": "Zoom",
+  "ar": "",
+  "where": "tab \"Locking\"",
+  "row": "Zoom+1 hour Only when on screen",
+  "kind": "text",
+  "id": 60
+ },
+ {
+  "en": "Only when on screen",
+  "ar": "نافذته ظاهرة",
+  "where": "tab \"Locking\"",
+  "row": "Zoom+1 hour Only when on screen",
+  "kind": "dropdown current value",
+  "id": 61
+ },
+ {
+  "en": "WhatsApp",
+  "ar": "",
+  "where": "tab \"Locking\"",
+  "row": "WhatsApp50% sooner (15 min) Only when on screen",
+  "kind": "text",
+  "id": 62
+ },
+ {
+  "en": "Google Chrome",
+  "ar": "",
+  "where": "tab \"Locking\"",
+  "row": "Google ChromeAlways lock after 5 minutes Only when on screen",
+  "kind": "text",
+  "id": 63
+ },
+ {
+  "en": "Always lock after 5 minutes",
+  "ar": "القفل بعد 5 دقائق",
+  "where": "tab \"Locking\"",
+  "row": "Google ChromeAlways lock after 5 minutes Only when on screen",
+  "kind": "dropdown current value",
+  "id": 64
+ },
+ {
+  "en": "Actions for when you're away and back. All are off until you turn them on.",
+  "ar": "إجراءات عند المغادرة وعند العودة، وكلها غير مفعَّلة حتى تفعّلها",
+  "where": "tab \"Away and back\"",
+  "row": "",
+  "kind": "description under a setting title",
+  "id": 65
+ },
+ {
+  "en": "When you're away",
+  "ar": "عند المغادرة",
+  "where": "tab \"Away and back\"",
+  "row": "When you're away",
+  "kind": "section heading",
+  "id": 66
+ },
+ {
+  "en": "Mute the PC",
+  "ar": "كتم صوت الكمبيوتر",
+  "where": "tab \"Away and back\"",
+  "row": "Mute the PCThe sound comes back when you unlock the PC",
+  "kind": "text",
+  "id": 67
+ },
+ {
+  "en": "The sound comes back when you're back",
+  "ar": "يعود الصوت كما كان عند فتح القفل",
+  "where": "tab \"Away and back\"",
+  "row": "Mute the PCThe sound comes back when you unlock the PC",
+  "kind": "description under a setting title",
+  "id": 68
+ },
+ {
+  "en": "Turn off the screen",
+  "ar": "إيقاف تشغيل الشاشة",
+  "where": "tab \"Away and back\"",
+  "row": "Turn off the screenPress any key or move the mouse to turn it back on",
+  "kind": "text",
+  "id": 69
+ },
+ {
+  "en": "Press any key or move the mouse to turn it back on",
+  "ar": "لتشغيل الشاشة، اضغط على أي مفتاح أو حرّك الماوس",
+  "where": "tab \"Away and back\"",
+  "row": "Turn off the screenPress any key or move the mouse to turn it back on",
+  "kind": "description under a setting title",
+  "id": 70
+ },
+ {
+  "en": "Play a sound",
+  "ar": "تشغيل صوت",
+  "where": "tab \"Away and back\"",
+  "row": "Play a soundA short sound when the PC locks",
+  "kind": "text",
+  "id": 71
+ },
+ {
+  "en": "A short sound when the PC locks",
+  "ar": "اختر صوتًا لتشغيله عند قفل الكمبيوتر",
+  "where": "tab \"Away and back\"",
+  "row": "Play a soundA short sound when the PC locks",
+  "kind": "description under a setting title",
+  "id": 72
+ },
+ {
+  "en": "Open apps",
+  "ar": "فتح التطبيقات",
+  "where": "tab \"Away and back\"",
+  "row": "Open appsOpens the apps you choose, like a music playerNo apps added",
+  "kind": "text",
+  "id": 73
+ },
+ {
+  "en": "Opens the apps you choose",
+  "ar": "تُفتح التطبيقات التي تضيفها هنا تلقائيًا عند قفل الكمبيوتر",
+  "where": "tab \"Away and back\"",
+  "row": "Open appsOpens the apps you choose, like a music playerNo apps added",
+  "kind": "description under a setting title",
+  "id": 74
+ },
+ {
+  "en": "No apps added",
+  "ar": "لا توجد تطبيقات بعد.",
+  "where": "tab \"Away and back\"",
+  "row": "Open appsOpens the apps you choose, like a music playerNo apps added",
+  "kind": "text",
+  "id": 75
+ },
+ {
+  "en": "Close apps",
+  "ar": "إغلاق التطبيقات",
+  "where": "tab \"Away and back\"",
+  "row": "Close appsCloses the apps you choose, and any unsaved work is lostNo apps added",
+  "kind": "text",
+  "id": 76
+ },
+ {
+  "en": "When you're back",
+  "ar": "عند العودة",
+  "where": "tab \"Away and back\"",
+  "row": "When you're back",
+  "kind": "section heading",
+  "id": 78
+ },
+ {
+  "en": "Show how long you were away",
+  "ar": "إظهار مدة الغياب",
+  "where": "tab \"Away and back\"",
+  "row": "Show how long you were awayA notification that goes away by itselfYou were away ",
+  "kind": "text",
+  "id": 79
+ },
+ {
+  "en": "A short notification after you've been away a minute or more",
+  "ar": "يظهر إشعار إذا كنت بعيدًا لمدة دقيقة أو أكثر",
+  "where": "tab \"Away and back\"",
+  "row": "Show how long you were awayA notification that goes away by itselfYou were away ",
+  "kind": "description under a setting title",
+  "id": 80
+ },
+ {
+  "en": "You were away 42 min",
+  "ar": "كنت بعيدًا لمدة 42 دقيقة",
+  "where": "tab \"Away and back\"",
+  "row": "Show how long you were awayA notification that goes away by itselfYou were away ",
+  "kind": "text",
+  "id": 81
+ },
+ {
+  "en": "· music or video is playing again",
+  "ar": "· تم استئناف التشغيل",
+  "where": "tab \"Away and back\"",
+  "row": "Show how long you were awayA notification that goes away by itselfYou were away ",
+  "kind": "description under a setting title",
+  "id": 82
+ },
+ {
+  "en": "A short sound when you unlock the PC",
+  "ar": "اختر صوتًا لتشغيله عند فتح القفل",
+  "where": "tab \"Away and back\"",
+  "row": "Play a soundA short sound when you unlock the PC",
+  "kind": "description under a setting title",
+  "id": 83
+ },
+ {
+  "en": "Opens the apps you choose",
+  "ar": "تُفتح التطبيقات التي تضيفها هنا تلقائيًا عند فتح القفل",
+  "where": "tab \"Away and back\"",
+  "row": "Open appsOpens the apps you choose, like emailNo apps added",
+  "kind": "description under a setting title",
+  "id": 84
+ },
+ {
+  "en": "Scripts",
+  "ar": "البرامج النصية",
+  "where": "tab \"Away and back\"",
+  "row": "Scripts",
+  "kind": "section heading",
+  "id": 85
+ },
+ {
+  "en": "Supports .bat, .cmd, PowerShell (.ps1), and shortcut files",
+  "ar": "يمكن تشغيل ملفات ‎.bat و‎.cmd و‎.ps1 (PowerShell) والاختصارات",
+  "where": "tab \"Away and back\"",
+  "row": "",
+  "kind": "description under a setting title",
+  "id": 86
+ },
+ {
+  "en": "Run a script when you're away",
+  "ar": "تشغيل برنامج نصي عند المغادرة",
+  "where": "tab \"Away and back\"",
+  "row": "Run a script when you're awayNo script chosen",
+  "kind": "text",
+  "id": 87
+ },
+ {
+  "en": "No script chosen",
+  "ar": "لم يتم اختيار ملف",
+  "where": "tab \"Away and back\"",
+  "row": "Run a script when you're awayNo script chosen",
+  "kind": "description under a setting title",
+  "id": 88
+ },
+ {
+  "en": "Choose…",
+  "ar": "اختيار ملف…",
+  "where": "tab \"Away and back\"",
+  "row": "Run a script when you're awayNo script chosen",
+  "kind": "button",
+  "id": 89
+ },
+ {
+  "en": "Run a script when you're back",
+  "ar": "تشغيل برنامج نصي عند العودة",
+  "where": "tab \"Away and back\"",
+  "row": "Run a script when you're backNo script chosen",
+  "kind": "text",
+  "id": 90
+ },
+ {
+  "en": "How SteppedOut looks.",
+  "ar": "تغيير مظهر SteppedOut",
+  "where": "tab \"Appearance\"",
+  "row": "",
+  "kind": "description under a setting title",
+  "id": 91
+ },
+ {
+  "en": "Light or dark mode",
+  "ar": "الوضع الفاتح أو الداكن",
+  "where": "tab \"Appearance\"",
+  "row": "Light or dark mode\"System\" uses the light or dark mode set in Windows",
+  "kind": "text",
+  "id": 92
+ },
+ {
+  "en": "\"System\" uses the light or dark mode set in Windows",
+  "ar": "اختر \"إعداد النظام\" لاستخدام الوضع المختار في Windows",
+  "where": "tab \"Appearance\"",
+  "row": "Light or dark mode\"System\" uses the light or dark mode set in Windows",
+  "kind": "description under a setting title",
+  "id": 93
+ },
+ {
+  "en": "Light",
+  "ar": "فاتح",
+  "where": "tab \"Appearance\"",
+  "row": "Light or dark mode\"System\" uses the light or dark mode set in Windows",
+  "kind": "text",
+  "id": 94
+ },
+ {
+  "en": "Dark",
+  "ar": "داكن",
+  "where": "tab \"Appearance\"",
+  "row": "Light or dark mode\"System\" uses the light or dark mode set in Windows",
+  "kind": "text",
+  "id": 95
+ },
+ {
+  "en": "System",
+  "ar": "إعداد النظام",
+  "where": "tab \"Appearance\"",
+  "row": "Light or dark mode\"System\" uses the light or dark mode set in Windows",
+  "kind": "text",
+  "id": 96
+ },
+ {
+  "en": "Text size",
+  "ar": "حجم النص",
+  "where": "tab \"Appearance\"",
+  "row": "Text sizeMakes all the text in SteppedOut bigger or smaller",
+  "kind": "text",
+  "id": 97
+ },
+ {
+  "en": "Makes all the text in SteppedOut bigger or smaller",
+  "ar": "يتغير حجم النص في كل نوافذ SteppedOut",
+  "where": "tab \"Appearance\"",
+  "row": "Text sizeMakes all the text in SteppedOut bigger or smaller",
+  "kind": "description under a setting title",
+  "id": 98
+ },
+ {
+  "en": "Small",
+  "ar": "صغير",
+  "where": "tab \"Appearance\"",
+  "row": "Text sizeMakes all the text in SteppedOut bigger or smaller",
+  "kind": "text",
+  "id": 99
+ },
+ {
+  "en": "Medium",
+  "ar": "متوسط",
+  "where": "tab \"Appearance\"",
+  "row": "Text sizeMakes all the text in SteppedOut bigger or smaller",
+  "kind": "text",
+  "id": 100
+ },
+ {
+  "en": "Large",
+  "ar": "كبير",
+  "where": "tab \"Appearance\"",
+  "row": "Text sizeMakes all the text in SteppedOut bigger or smaller",
+  "kind": "text",
+  "id": 101
+ },
+ {
+  "en": "Button color",
+  "ar": "لون الأزرار",
+  "where": "tab \"Appearance\"",
+  "row": "Button colorAlso used for switches and the countdown circle",
+  "kind": "text",
+  "id": 102
+ },
+ {
+  "en": "Also used for switches and the countdown circle",
+  "ar": "يُستخدم أيضًا في مفاتيح التبديل ودائرة العدّ التنازلي",
+  "where": "tab \"Appearance\"",
+  "row": "Button colorAlso used for switches and the countdown circle",
+  "kind": "description under a setting title",
+  "id": 103
+ },
+ {
+  "en": "Green",
+  "ar": "أخضر",
+  "where": "tab \"Appearance\"",
+  "row": "Button colorAlso used for switches and the countdown circle",
+  "kind": "dropdown current value",
+  "id": 104
+ },
+ {
+  "en": "Show minutes left on the taskbar icon",
+  "ar": "إظهار الدقائق المتبقية قبل القفل",
+  "where": "tab \"Appearance\"",
+  "row": "Show minutes left on the taskbar iconA small number on the icon next to the cloc",
+  "kind": "text",
+  "id": 105
+ },
+ {
+  "en": "A small number on the icon next to the clock counts down to the lock",
+  "ar": "يظهر رقم صغير على أيقونة القفل بجوار الساعة، ويقل حتى يُقفل الكمبيوتر",
+  "where": "tab \"Appearance\"",
+  "row": "Show minutes left on the taskbar iconA small number on the icon next to the cloc",
+  "kind": "description under a setting title",
+  "id": 106
+ },
+ {
+  "en": "Where notifications appear",
+  "ar": "مكان ظهور الإشعارات",
+  "where": "tab \"Appearance\"",
+  "row": "Where notifications appearApplies to the lock countdown, time away, and break re",
+  "kind": "text",
+  "id": 107
+ },
+ {
+  "en": "Applies to the lock countdown, time away, and break reminders",
+  "ar": "يشمل التنبيه قبل القفل وإشعار مدة الغياب وتذكيرات الاستراحة",
+  "where": "tab \"Appearance\"",
+  "row": "Where notifications appearApplies to the lock countdown, time away, and break re",
+  "kind": "description under a setting title",
+  "id": 108
+ },
+ {
+  "en": "Bottom right",
+  "ar": "أسفل اليمين",
+  "where": "tab \"Appearance\"",
+  "row": "Where notifications appearApplies to the lock countdown, time away, and break re",
+  "kind": "dropdown current value",
+  "id": 109
+ },
+ {
+  "en": "Reminders to get up after sitting for a long time. These never lock the PC.",
+  "ar": "تذكيرات بالاستراحة إذا طال جلوسك أمام الكمبيوتر، ولا تُقفله أبدًا",
+  "where": "tab \"Breaks\"",
+  "row": "",
+  "kind": "description under a setting title",
+  "id": 110
+ },
+ {
+  "en": "Break reminders",
+  "ar": "تذكيرات الاستراحة",
+  "where": "tab \"Breaks\"",
+  "row": "Break remindersGoes away by itself and never appears during calls or in full scr",
+  "kind": "text",
+  "id": 111
+ },
+ {
+  "en": "Goes away by itself and never appears during calls or in full screen",
+  "ar": "تختفي التذكيرات بعد فترة، ولا تظهر أثناء المكالمات أو في وضع ملء الشاشة",
+  "where": "tab \"Breaks\"",
+  "row": "Break remindersGoes away by itself and never appears during calls or in full scr",
+  "kind": "description under a setting title",
+  "id": 112
+ },
+ {
+  "en": "Time for a break",
+  "ar": "حان وقت الاستراحة",
+  "where": "tab \"Breaks\"",
+  "row": "Break remindersGoes away by itself and never appears during calls or in full scr",
+  "kind": "text",
+  "id": 113
+ },
+ {
+  "en": "· 1 hr at the PC",
+  "ar": "· أمام الكمبيوتر منذ ساعة",
+  "where": "tab \"Breaks\"",
+  "row": "Break remindersGoes away by itself and never appears during calls or in full scr",
+  "kind": "description under a setting title",
+  "id": 114
+ },
+ {
+  "en": "Show a reminder after",
+  "ar": "تذكيري بعد",
+  "where": "tab \"Breaks\"",
+  "row": "Show a reminder afterTime at the PC before the reminder appears",
+  "kind": "text",
+  "id": 115
+ },
+ {
+  "en": "Time at the PC before the reminder appears",
+  "ar": "المدة التي تقضيها أمام الكمبيوتر قبل ظهور التذكير، ولا علاقة لها بمهلة القفل",
+  "where": "tab \"Breaks\"",
+  "row": "Show a reminder afterTime at the PC before the reminder appears",
+  "kind": "description under a setting title",
+  "id": 116
+ },
+ {
+  "en": "1 hour",
+  "ar": "ساعة واحدة",
+  "where": "tab \"Breaks\"",
+  "row": "Show a reminder afterTime at the PC before the reminder appears",
+  "kind": "dropdown current value",
+  "id": 117
+ },
+ {
+  "en": "Reminder sound",
+  "ar": "صوت التذكير",
+  "where": "tab \"Breaks\"",
+  "row": "Reminder soundPlays when the reminder appears",
+  "kind": "text",
+  "id": 118
+ },
+ {
+  "en": "Plays when the reminder appears",
+  "ar": "اختر صوتًا لتشغيله عند ظهور التذكير",
+  "where": "tab \"Breaks\"",
+  "row": "Reminder soundPlays when the reminder appears",
+  "kind": "description under a setting title",
+  "id": 119
+ },
+ {
+  "en": "Eye breaks (20-20-20)",
+  "ar": "استراحة العينين (20-20-20)",
+  "where": "tab \"Breaks\"",
+  "row": "Eye breaks (20-20-20)Every 20 minutes, a reminder to look about 6 meters away fo",
+  "kind": "text",
+  "id": 120
+ },
+ {
+  "en": "Every 20 minutes, a reminder to look about 6 meters away for 20 seconds",
+  "ar": "يذكّرك كل 20 دقيقة بالنظر إلى شيء يبعد عنك حوالي 6 أمتار لمدة 20 ثانية",
+  "where": "tab \"Breaks\"",
+  "row": "Eye breaks (20-20-20)Every 20 minutes, a reminder to look about 6 meters away fo",
+  "kind": "description under a setting title",
+  "id": 121
+ },
+ {
+  "en": "Snooze button",
+  "ar": "زر التأجيل",
+  "where": "tab \"Breaks\"",
+  "row": "Snooze buttonAdds a button to show the reminder again later",
+  "kind": "text",
+  "id": 122
+ },
+ {
+  "en": "Adds a button to show the reminder again later",
+  "ar": "يُضاف إلى التذكير زر يعيد إظهاره بعد المدة التي تختارها",
+  "where": "tab \"Breaks\"",
+  "row": "Snooze buttonAdds a button to show the reminder again later",
+  "kind": "description under a setting title",
+  "id": 123
+ },
+ {
+  "en": "10 minutes later",
+  "ar": "بعد 10 دقائق",
+  "where": "tab \"Breaks\"",
+  "row": "Snooze buttonAdds a button to show the reminder again later",
+  "kind": "dropdown current value",
+  "id": 124
+ },
+ {
+  "en": "More settings, and tools for when something isn't working.",
+  "ar": "إعدادات إضافية وأدوات لحل المشكلات",
+  "where": "tab \"Extras\"",
+  "row": "",
+  "kind": "description under a setting title",
+  "id": 125
+ },
+ {
+  "en": "Ignore tiny mouse movements",
+  "ar": "تجاهل حركات الماوس الصغيرة جدًا",
+  "where": "tab \"Extras\"",
+  "row": "Ignore tiny mouse movementsBumping the desk won't count as using the PC",
+  "kind": "text",
+  "id": 126
+ },
+ {
+  "en": "Tiny mouse movements don't count as using the PC",
+  "ar": "الحركة الصغيرة جدًا، مثل اهتزاز المكتب، لا تؤخر القفل",
+  "where": "tab \"Extras\"",
+  "row": "Ignore tiny mouse movementsBumping the desk won't count as using the PC",
+  "kind": "description under a setting title",
+  "id": 127
+ },
+ {
+  "en": "Settings file and log",
+  "ar": "مجلد الإعدادات والسجل",
+  "where": "tab \"Extras\"",
+  "row": "Settings file and logThe log shows when the PC locked, or why it didn't",
+  "kind": "text",
+  "id": 128
+ },
+ {
+  "en": "The log shows when the PC locked, or why it didn't",
+  "ar": "يوضح السجل متى قُفل الكمبيوتر ومتى لم يُقفل ولماذا",
+  "where": "tab \"Extras\"",
+  "row": "Settings file and logThe log shows when the PC locked, or why it didn't",
+  "kind": "description under a setting title",
+  "id": 129
+ },
+ {
+  "en": "Open folder",
+  "ar": "فتح المجلد",
+  "where": "tab \"Extras\"",
+  "row": "Settings file and logThe log shows when the PC locked, or why it didn't",
+  "kind": "button",
+  "id": 130
+ },
+ {
+  "en": "Keyboard shortcut to lock now",
+  "ar": "اختصار لوحة المفاتيح للقفل",
+  "where": "tab \"Extras\"",
+  "row": "Keyboard shortcut to lock nowWorks in any app and runs your away actions, like m",
+  "kind": "text",
+  "id": 131
+ },
+ {
+  "en": "Works in any app and runs your away actions, like muting",
+  "ar": "يعمل في أي تطبيق، وتبدأ معه إجراءات المغادرة أيضًا، مثل كتم الصوت",
+  "where": "tab \"Extras\"",
+  "row": "Keyboard shortcut to lock nowWorks in any app and runs your away actions, like m",
+  "kind": "description under a setting title",
+  "id": 132
+ },
+ {
+  "en": "Ctrl+Alt+L",
+  "ar": "Ctrl+Alt+L",
+  "where": "tab \"Extras\"",
+  "row": "Keyboard shortcut to lock nowWorks in any app and runs your away actions, like m",
+  "kind": "dropdown current value",
+  "id": 133
+ },
+ {
+  "en": "Why isn't the PC locking?",
+  "ar": "لماذا لا يُقفل الكمبيوتر؟",
+  "where": "tab \"Extras\"",
+  "row": "Why isn't the PC locking?Shows what's delaying or stopping the lock right now, l",
+  "kind": "text",
+  "id": 134
+ },
+ {
+  "en": "Shows what's delaying or stopping the lock right now",
+  "ar": "عرض ما يؤخر القفل أو يمنعه الآن",
+  "where": "tab \"Extras\"",
+  "row": "Why isn't the PC locking?Shows what's delaying or stopping the lock right now, l",
+  "kind": "description under a setting title",
+  "id": 135
+ },
+ {
+  "en": "Show",
+  "ar": "فتح",
+  "where": "tab \"Extras\"",
+  "row": "Why isn't the PC locking?Shows what's delaying or stopping the lock right now, l",
+  "kind": "button",
+  "id": 136
+ },
+ {
+  "en": "Audio",
+  "ar": "اكتشاف الصوت",
+  "where": "tab \"Extras\"",
+  "row": "Audio",
+  "kind": "section heading",
+  "id": 137,
+  "arabic": "pending"
+ },
+ {
+  "en": "Change these only if quiet background sound keeps the PC from locking on time.",
+  "ar": "لا حاجة لتغييرها إلا إذا كان صوت خافت في الخلفية يمنع قفل الجهاز في وقته.",
+  "where": "tab \"Extras\"",
+  "row": "",
+  "kind": "description under a setting title",
+  "id": 138
+ },
+ {
+  "en": "How loud sound must be to count",
+  "ar": "مستوى الصوت الذي يؤخر القفل",
+  "where": "tab \"Extras\"",
+  "row": "Sounds that count as music or videoChoose a louder option if quiet background so",
+  "kind": "text",
+  "id": 139
+ },
+ {
+  "en": "Choose a louder option if quiet background sound delays the lock",
+  "ar": "إذا كان صوت منخفض في الخلفية يؤخر القفل، فاختر مستوى أعلى",
+  "where": "tab \"Extras\"",
+  "row": "Sounds that count as music or videoChoose a louder option if quiet background so",
+  "kind": "description under a setting title",
+  "id": 140
+ },
+ {
+  "en": "Any sound, even if it's very quiet",
+  "ar": "أي صوت، حتى المنخفض جدًا",
+  "where": "tab \"Extras\"",
+  "row": "Sounds that count as music or videoChoose a louder option if quiet background so",
+  "kind": "dropdown current value",
+  "id": 141
+ },
+ {
+  "en": "Silence before it counts as stopped",
+  "ar": "اعتبار الصوت متوقفًا بعد صمت",
+  "where": "tab \"Extras\"",
+  "row": "Music or video counts as stopped afterSo a quiet scene doesn't count as the vide",
+  "kind": "text",
+  "id": 142
+ },
+ {
+  "en": "So a short silence doesn't end the extra time",
+  "ar": "لا ينتهي الوقت الإضافي بسبب صمت قصير في منتصف المقطع",
+  "where": "tab \"Extras\"",
+  "row": "Music or video counts as stopped afterSo a quiet scene doesn't count as the vide",
+  "kind": "description under a setting title",
+  "id": 143
+ },
+ {
+  "en": "30 seconds",
+  "ar": "30 ثانية",
+  "where": "tab \"Extras\"",
+  "row": "Music or video counts as stopped afterSo a quiet scene doesn't count as the vide",
+  "kind": "dropdown current value",
+  "id": 144
+ },
+ {
+  "en": "Changes are saved automatically.",
+  "ar": "تُحفظ التغييرات تلقائيًا.",
+  "where": "footer",
+  "row": "",
+  "kind": "text",
+  "id": 145
+ },
+ {
+  "en": "Version 1.0.0",
+  "ar": "الإصدار 1.0.0",
+  "where": "footer",
+  "row": "",
+  "kind": "text",
+  "id": 146
+ },
+ {
+  "en": "Lock as usual",
+  "ar": "بلا تغيير",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "dropdown option",
+  "id": 147
+ },
+ {
+  "en": "Lock sooner",
+  "ar": "مهلة أقصر",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "heading inside a dropdown menu",
+  "id": 148
+ },
+ {
+  "en": "25% sooner",
+  "ar": "أقصر بنسبة 25%",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "dropdown option",
+  "id": 149
+ },
+ {
+  "en": "75% sooner",
+  "ar": "أقصر بنسبة 75%",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "dropdown option",
+  "id": 150
+ },
+ {
+  "en": "Fixed time (overrides Never lock)",
+  "ar": "مهلة ثابتة (لها الأولوية على \"عدم القفل\")",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "heading inside a dropdown menu",
+  "id": 151
+ },
+ {
+  "en": "Always lock after 2 minutes",
+  "ar": "القفل بعد دقيقتين",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "dropdown option",
+  "id": 152
+ },
+ {
+  "en": "Always lock after 10 minutes",
+  "ar": "القفل بعد 10 دقائق",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "dropdown option",
+  "id": 153
+ },
+ {
+  "en": "Always lock after 15 minutes",
+  "ar": "القفل بعد 15 دقيقة",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "dropdown option",
+  "id": 154
+ },
+ {
+  "en": "Always lock after 30 minutes",
+  "ar": "القفل بعد 30 دقيقة",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "dropdown option",
+  "id": 155
+ },
+ {
+  "en": "Always lock after 1 hour",
+  "ar": "القفل بعد ساعة",
+  "where": "tab \"Locking\"",
+  "row": "On battery powerUse a different lock time when the laptop isn't plugged in",
+  "kind": "dropdown option",
+  "id": 156
+ },
+ {
+  "en": "Wait longer",
+  "ar": "وقت إضافي",
+  "where": "tab \"Locking\"",
+  "row": "OBSNever lock Open, even in background",
+  "kind": "heading inside a dropdown menu",
+  "id": 157
+ },
+ {
+  "en": "+15 minutes",
+  "ar": "+15 دقيقة",
+  "where": "tab \"Locking\"",
+  "row": "OBSNever lock Open, even in background",
+  "kind": "dropdown option",
+  "id": 158
+ },
+ {
+  "en": "+30 minutes",
+  "ar": "+30 دقيقة",
+  "where": "tab \"Locking\"",
+  "row": "OBSNever lock Open, even in background",
+  "kind": "dropdown option",
+  "id": 159
+ },
+ {
+  "en": "Click",
+  "ar": "نقرة",
+  "where": "tab \"Away and back\"",
+  "row": "Play a soundA short sound when the PC locks",
+  "kind": "dropdown option",
+  "id": 160
+ },
+ {
+  "en": "Chime",
+  "ar": "رنّة",
+  "where": "tab \"Away and back\"",
+  "row": "Play a soundA short sound when the PC locks",
+  "kind": "dropdown option",
+  "id": 161
+ },
+ {
+  "en": "Blue",
+  "ar": "أزرق",
+  "where": "tab \"Appearance\"",
+  "row": "Button colorAlso used for switches and the countdown circle",
+  "kind": "dropdown option",
+  "id": 162
+ },
+ {
+  "en": "Purple",
+  "ar": "بنفسجي",
+  "where": "tab \"Appearance\"",
+  "row": "Button colorAlso used for switches and the countdown circle",
+  "kind": "dropdown option",
+  "id": 163
+ },
+ {
+  "en": "Top right",
+  "ar": "أعلى اليمين",
+  "where": "tab \"Appearance\"",
+  "row": "Where notifications appearApplies to the lock countdown, time away, and break re",
+  "kind": "dropdown option",
+  "id": 164
+ },
+ {
+  "en": "Bottom left",
+  "ar": "أسفل اليسار",
+  "where": "tab \"Appearance\"",
+  "row": "Where notifications appearApplies to the lock countdown, time away, and break re",
+  "kind": "dropdown option",
+  "id": 165
+ },
+ {
+  "en": "Center",
+  "ar": "الوسط",
+  "where": "tab \"Appearance\"",
+  "row": "Where notifications appearApplies to the lock countdown, time away, and break re",
+  "kind": "dropdown option",
+  "id": 166
+ },
+ {
+  "en": "Soft chime",
+  "ar": "رنّة هادئة",
+  "where": "tab \"Breaks\"",
+  "row": "Reminder soundPlays when the reminder appears",
+  "kind": "dropdown option",
+  "id": 167
+ },
+ {
+  "en": "30 minutes later",
+  "ar": "بعد 30 دقيقة",
+  "where": "tab \"Breaks\"",
+  "row": "Snooze buttonAdds a button to show the reminder again later",
+  "kind": "dropdown option",
+  "id": 168
+ },
+ {
+  "en": "Choose another shortcut…",
+  "ar": "تعيين اختصار آخر…",
+  "where": "tab \"Extras\"",
+  "row": "Keyboard shortcut to lock nowWorks in any app and runs your away actions, like m",
+  "kind": "dropdown option",
+  "id": 169
+ },
+ {
+  "en": "Normal volume or louder",
+  "ar": "متوسط أو أعلى",
+  "where": "tab \"Extras\"",
+  "row": "Sounds that count as music or videoChoose a louder option if quiet background so",
+  "kind": "dropdown option",
+  "id": 170
+ },
+ {
+  "en": "Only loud sound",
+  "ar": "مرتفع فقط",
+  "where": "tab \"Extras\"",
+  "row": "Sounds that count as music or videoChoose a louder option if quiet background so",
+  "kind": "dropdown option",
+  "id": 171
+ },
+ {
+  "en": "10 seconds",
+  "ar": "10 ثوانٍ",
+  "where": "tab \"Extras\"",
+  "row": "Music or video counts as stopped afterSo a quiet scene doesn't count as the vide",
+  "kind": "dropdown option",
+  "id": 172
+ },
+ {
+  "en": "1 minute",
+  "ar": "دقيقة واحدة",
+  "where": "tab \"Extras\"",
+  "row": "Music or video counts as stopped afterSo a quiet scene doesn't count as the vide",
+  "kind": "dropdown option",
+  "id": 173
+ },
+ {
+  "en": "5 minutes",
+  "ar": "5 دقائق",
+  "where": "main settings list",
+  "row": "Lock the PC after",
+  "kind": "dropdown option",
+  "id": 174
+ },
+ {
+  "en": "10 minutes",
+  "ar": "10 دقائق",
+  "where": "main settings list",
+  "row": "Lock the PC after",
+  "kind": "dropdown option",
+  "id": 175
+ },
+ {
+  "en": "15 minutes",
+  "ar": "15 دقيقة",
+  "where": "main settings list",
+  "row": "Lock the PC after",
+  "kind": "dropdown option",
+  "id": 176
+ },
+ {
+  "en": "No extra time",
+  "ar": "بلا وقت إضافي",
+  "where": "main settings list",
+  "row": "While music or video is playing",
+  "kind": "dropdown option",
+  "id": 177
+ },
+ {
+  "en": "10 seconds",
+  "ar": "10 ثوانٍ",
+  "where": "main settings list",
+  "row": "Warn me before it locks",
+  "kind": "dropdown option",
+  "id": 178
+ },
+ {
+  "en": "1 minute",
+  "ar": "دقيقة واحدة",
+  "where": "main settings list",
+  "row": "Warn me before it locks",
+  "kind": "dropdown option",
+  "id": 179
+ },
+ {
+  "en": "Keep it paused",
+  "ar": "إيقاف مؤقت فقط",
+  "where": "main settings list",
+  "row": "Pause music and video when you leave",
+  "kind": "dropdown option",
+  "id": 180
+ },
+ {
+  "en": "Don't pause",
+  "ar": "عدم الإيقاف",
+  "where": "main settings list",
+  "row": "Pause music and video when you leave",
+  "kind": "dropdown option",
+  "id": 181
+ }
+]

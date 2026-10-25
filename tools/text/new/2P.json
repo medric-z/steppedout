@@ -1,0 +1,3 @@
+[
+  {"id": "2P.1", "name": "CustomLoudness", "en": "Custom level ({0})", "ar": "مستوى مخصص ({0})", "where": "dropdown option, a level set in the settings file", "row": "Sounds that count as music or video", "kind": "template", "status": "new", "excluded": true, "why": "the loudness list shows a level of its own as a percent (PercentCount) since 1.0"}
+]

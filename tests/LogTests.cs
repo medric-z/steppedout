@@ -40,4 +40,30 @@ public class LogTests
             Directory.Delete(dir, recursive: true);
         }
     }
+
+    [TestMethod]
+    public void KeepsWritingWhenTheRolloverIsBlocked()
+    {
+        string dir = Path.Combine(Path.GetTempPath(), "SteppedOut.Tests", Guid.NewGuid().ToString("N"));
+        Directory.CreateDirectory(dir);
+        try
+        {
+            string path = Path.Combine(dir, "test.log");
+            var log = new RollingLog(path, maxBytes: 10);
+            log.Write("this line fills the log");
+            // A viewer such as Get-Content -Wait shares reading and writing but not deleting, so
+            // the log cannot be moved aside while it is open.
+            using (new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            {
+                log.Write("written while a viewer is open");
+            }
+
+            Assert.IsFalse(File.Exists(Path.Combine(dir, "test.old.log")), "the rollover should have been blocked");
+            StringAssert.Contains(File.ReadAllText(path), "written while a viewer is open");
+        }
+        finally
+        {
+            Directory.Delete(dir, recursive: true);
+        }
+    }
 }
