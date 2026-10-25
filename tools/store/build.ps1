@@ -63,7 +63,7 @@ $env:DOTNET_NOLOGO = '1'
 $repo = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
 $app = Join-Path $repo 'src\SteppedOut.csproj'
 $icons = Join-Path $PSScriptRoot 'StoreIcons.csproj'
-$template = Join-Path $repo 'store\Package.appxmanifest.template'
+$template = Join-Path $repo 'tools\store\Package.appxmanifest.template'
 $architectures = [ordered]@{ 'win-x64' = 'x64'; 'win-arm64' = 'arm64' }
 $marker = '.store-build'
 

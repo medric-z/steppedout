@@ -83,7 +83,7 @@ public class DebugInfoTests
         }
     }
 
-    // The src folder without its build output, and the .editorconfig the zip has beside it.
+    // The src folder without its build output, and an .editorconfig beside it when there is one.
     static string CopySource(string root)
     {
         var repo = new DirectoryInfo(AppContext.BaseDirectory);

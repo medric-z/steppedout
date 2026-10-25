@@ -122,7 +122,7 @@ enum StartupTaskState
     EnabledByPolicy = 4,
 }
 
-// The package's startup task: the windows.startupTask extension in store/Package.appxmanifest.template,
+// The package's startup task: the windows.startupTask extension in tools/store/Package.appxmanifest.template,
 // which Windows lists under Settings, Apps, Startup. A seam, so the tests can give its states.
 interface IStartupTask
 {

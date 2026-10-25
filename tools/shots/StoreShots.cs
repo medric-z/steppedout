@@ -7,7 +7,7 @@ using SteppedOut;
 // The Microsoft Store screenshots: 1366 x 768 PNGs, the app's real windows drawn by PrintWindow and
 // placed on a plain desktop with a taskbar, as they open on a screen that size (the windows take
 // their height from a 1366 x 720 work area). Five scenes, in the order of the screenshot captions
-// in store/listing: settings, countdown, tray menu, away and back, and the Why window. A scene is
+// in tools/store/listing: settings, countdown, tray menu, away and back, and the Why window. A scene is
 // store-<scene>-<language>-<theme>.png. Nothing is shown on the screen: the windows are off it, as
 // in every other part.
 static class StoreShots

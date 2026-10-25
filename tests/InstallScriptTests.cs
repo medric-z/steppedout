@@ -70,10 +70,10 @@ public class InstallScriptTests
     {
         for (var folder = new DirectoryInfo(AppContext.BaseDirectory); folder is not null; folder = folder.Parent)
         {
-            string install = Path.Combine(folder.FullName, "install.ps1");
+            string install = Path.Combine(folder.FullName, "tools", "install.ps1");
             if (File.Exists(install)) return install;
         }
-        throw new InvalidOperationException("install.ps1 not found above the test folder");
+        throw new InvalidOperationException("tools/install.ps1 not found above the test folder");
     }
 
     // The lines the run logged, in order.

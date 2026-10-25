@@ -84,10 +84,10 @@ been tested on an ARM PC yet.
 ### Install or update from PowerShell
 
 ```
-irm https://raw.githubusercontent.com/medric-z/steppedout/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/medric-z/steppedout/main/tools/install.ps1 | iex
 ```
 
-This runs [install.ps1](install.ps1), which is short enough to read first. It downloads the latest
+This runs [install.ps1](tools/install.ps1), which is short enough to read first. It downloads the latest
 exe for your processor into `%LOCALAPPDATA%\SteppedOut` and checks it against the release's SHA256
 list. If the list is missing, does not name the file or does not match, nothing is installed and
 the copy you have keeps running. Then it stops the SteppedOut that is running in your sign-in,

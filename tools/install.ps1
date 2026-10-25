@@ -1,5 +1,5 @@
 # Installs SteppedOut: downloads the latest release into %LOCALAPPDATA%\SteppedOut and starts it.
-# Read it before running it: https://github.com/medric-z/steppedout/blob/main/install.ps1
+# Read it before running it: https://github.com/medric-z/steppedout/blob/main/tools/install.ps1
 $ErrorActionPreference = 'Stop'
 # Windows PowerShell 5.1 redraws the progress bar so often that it slows the download many times over.
 $ProgressPreference = 'SilentlyContinue'

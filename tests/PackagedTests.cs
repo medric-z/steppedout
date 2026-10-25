@@ -324,7 +324,7 @@ public class PackagedTests
     public void TheManifestDeclaresTheTaskTheAppAsksFor()
     {
         XNamespace desktop = "http://schemas.microsoft.com/appx/manifest/desktop/windows10";
-        var manifest = XDocument.Load(Path.Combine(Root, "store", "Package.appxmanifest.template"));
+        var manifest = XDocument.Load(Path.Combine(Root, "tools", "store", "Package.appxmanifest.template"));
         var extension = manifest.Descendants(desktop + "Extension").Single(e => (string?)e.Attribute("Category") == "windows.startupTask");
         var task = extension.Element(desktop + "StartupTask")!;
         Assert.AreEqual(StartupTaskApi.TaskId, (string?)task.Attribute("TaskId"));
@@ -357,9 +357,9 @@ public class PackagedTests
         {
             for (var dir = new DirectoryInfo(AppContext.BaseDirectory); dir is not null; dir = dir.Parent)
             {
-                if (File.Exists(Path.Combine(dir.FullName, "store", "Package.appxmanifest.template"))) return dir.FullName;
+                if (File.Exists(Path.Combine(dir.FullName, "tools", "store", "Package.appxmanifest.template"))) return dir.FullName;
             }
-            throw new InvalidOperationException("store/Package.appxmanifest.template not found above the test folder");
+            throw new InvalidOperationException("tools/store/Package.appxmanifest.template not found above the test folder");
         }
     }
 
