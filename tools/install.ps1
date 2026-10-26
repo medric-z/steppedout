@@ -71,7 +71,11 @@ try {
     try { $running | Stop-Process -Force }
     catch { $running = @(); throw "A copy of SteppedOut is running with admin rights, and this PowerShell is not allowed to stop it. Nothing was changed. Sign out and back in, then run this line again, or run it from a PowerShell opened as administrator." }
     $running | Wait-Process -Timeout 10
-    Move-Item -Force $download $exe
+    # A copy that was just stopped can hold on to its file for a moment after it exits.
+    for ($try = 1; ; $try++) {
+        try { Move-Item -Force $download $exe; break }
+        catch { if ($try -ge 20) { throw }; Start-Sleep -Milliseconds 250 }
+    }
 } catch {
     Remove-Item $download -ErrorAction SilentlyContinue
     # Put back what was running: the installed copy, or on a first install the copy that was stopped.
